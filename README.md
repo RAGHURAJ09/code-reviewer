@@ -72,6 +72,61 @@ The application is built to be simple, efficient, and easy to understand. The us
 - Google Gemini Pro API
 
 
+## 📈 Model Performance
+
+The system provides comprehensive model evaluation:
+- **RMSE**: Root Mean Square Error (lower is better)
+- **MAE**: Mean Absolute Error
+- **R² Score**: Coefficient of determination (higher is better)
+- **Feature Importance**: Understanding of feature contributions
+
+## 🚨 Troubleshooting
+
+### Common Issues
+
+1. **Model Not Found Error**
+   ```
+   ❌ Error loading model: [Errno 2] No such file or directory
+   ```
+   **Solution**: Run the training script first to generate the model files.
+
+2. **Gemini API Error**
+   ```
+   Unable to generate anomaly explanation: API key not valid
+   ```
+   **Solution**: Set the correct `GEMINI_API_KEY` environment variable.
+
+3. **Data Collection Failed**
+   ```
+   Failed to fetch data. Status code: 429
+   ```
+   **Solution**: Wait a few minutes and try again (rate limiting).
+
+4. **Port Already in Use**
+   ```
+   Address already in use
+   ```
+   **Solution**: Change the port in `app.py` or kill the existing process.
+
+### Performance Tips
+
+- Use a virtual environment to avoid dependency conflicts
+- Ensure sufficient RAM for model training (recommended: 4GB+)
+- For production, consider using Gunicorn or uWSGI instead of Flask's development server
+
+## 🔮 Future Enhancements
+
+- [ ] Support for more product APIs
+- [ ] Advanced feature engineering
+- [ ] Model versioning and A/B testing
+- [ ] Real-time model retraining
+- [ ] Docker containerization
+- [ ] Cloud deployment scripts
+- [ ] Additional ML algorithms
+- [ ] Batch prediction API
+
+
+
 ## ⚙️ Configuration
 The application requires the following environment variable to be set in the .env file:
 
