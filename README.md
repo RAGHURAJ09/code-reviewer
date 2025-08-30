@@ -4,25 +4,25 @@ A simple yet powerful web application that provides instant, AI-powered code rev
 ## 📖 Table of Contents
 - About The Project
 
-_ Key Features
+- Key Features
 
-_ Built With
+- Built With
 
-_ Getting Started
+- Getting Started
 
-_ Prerequisites
+- Prerequisites
 
-_ Installation
+- Installation
 
-_ Configuration
+- Configuration
 
-_ API Endpoint Documentation
+- API Endpoint Documentation
 
-_ Project Architecture
+- Project Architecture
 
-_ Prompt Engineering
+- Prompt Engineering
 
-_ Contributing
+- Contributing
 
 ## 📖 About The Project
 In modern software development, code reviews are essential for maintaining quality, but they can be time-consuming. This project aims to bridge that gap by providing an automated "first pass" review. It allows developers and students to get immediate, intelligent feedback on code snippets without waiting for a human reviewer.
@@ -31,51 +31,51 @@ The application is built to be simple, efficient, and easy to understand. The us
 
 
 ## ✨ Key Features
-_ **Dynamic Frontend**: A lightweight, responsive, and fast user interface built with vanilla JavaScript, HTML5, and CSS3. No heavy frameworks are needed.
+- **Dynamic Frontend**: A lightweight, responsive, and fast user interface built with vanilla JavaScript, HTML5, and CSS3. No heavy frameworks are needed.
 
-_ **Robust Backend API**: A scalable RESTful API built with Node.js and the Express.js framework, providing a clear and stable endpoint for code analysis.
+- **Robust Backend API**: A scalable RESTful API built with Node.js and the Express.js framework, providing a clear and stable endpoint for code analysis.
 
-_ **State-of-the-Art AI Integration**: Utilizes the Google Gemini Pro model for nuanced and context-aware code analysis, going beyond simple linting.
+- **State-of-the-Art AI Integration**: Utilizes the Google Gemini Pro model for nuanced and context-aware code analysis, going beyond simple linting.
 
-_ **Secure by Design**: Follows security best practices by using environment variables (.env) to manage the sensitive Gemini API key, preventing it from being exposed in the source code.
+- **Secure by Design**: Follows security best practices by using environment variables (.env) to manage the sensitive Gemini API key, preventing it from being exposed in the source code.
 
-_ **User-Friendly Interface**: A clean, minimalist UI/UX that is intuitive and requires no setup for the end-user.
+- **User-Friendly Interface**: A clean, minimalist UI/UX that is intuitive and requires no setup for the end-user.
 
-_ **Interactive Web UI**: A clean and simple interface to paste code and view feedback directly in your browser.
+- **Interactive Web UI**: A clean and simple interface to paste code and view feedback directly in your browser.
 
-_ **Instant Analysis**: Leverages the power of the Google Gemini Pro API to get real-time code analysis without any setup or configuration.
+- **Instant Analysis**: Leverages the power of the Google Gemini Pro API to get real-time code analysis without any setup or configuration.
 
-_ **Quality-Focused Feedback**: The AI is specifically prompted to act as an expert code reviewer, focusing on high-impact suggestions rather than minor style preferences.
+- **Quality-Focused Feedback**: The AI is specifically prompted to act as an expert code reviewer, focusing on high-impact suggestions rather than minor style preferences.
 
-_ **Simple & Secure Architecture**: Built with a standard Node.js backend and a static frontend, using environment variables to keep your API keys safe.
+- **Simple & Secure Architecture**: Built with a standard Node.js backend and a static frontend, using environment variables to keep your API keys safe.
 
 ## 🛠️ Tech Stack
 **This project leverages a modern and widely-used tech stack.**
 
 ***Frontend***
-_ **HTML5**: Standard markup language for creating the web page structure.
+- **HTML5**: Standard markup language for creating the web page structure.
 
-_ **CSS3**: Styling language for designing the user interface.
+- **CSS3**: Styling language for designing the user interface.
 
-_ **Vanilla JavaScript**: Used for all client-side logic, including DOM manipulation and API requests (fetch).
+- **Vanilla JavaScript**: Used for all client-side logic, including DOM manipulation and API requests (fetch).
 
 ***Backend***
-_ **Node.js**: A JavaScript runtime for building the server-side application.
+- **Node.js**: A JavaScript runtime for building the server-side application.
 
-_ **Express.js**: A minimal and flexible Node.js web application framework.
+- **Express.js**: A minimal and flexible Node.js web application framework.
 
-_ **@google/generative-ai**: The official Google client library for the Gemini API.
+- **@google/generative-ai**: The official Google client library for the Gemini API.
 
-_ **dotenv**: A zero-dependency module that loads environment variables from a .env file.
+- **dotenv**: A zero-dependency module that loads environment variables from a .env file.
 
 ***AI***
-_ Google Gemini Pro API
+- Google Gemini Pro API
 
 
 ## ⚙️ Configuration
 The application requires the following environment variable to be set in the .env file:
 
-_ **GEMINI_API_KEY**: This is your secret key for authenticating with the Google Gemini API. The application will not work without it.
+- **GEMINI_API_KEY**: This is your secret key for authenticating with the Google Gemini API. The application will not work without it.
 
 
 ## 🚀 Getting Started
@@ -97,11 +97,11 @@ web-code-reviewer/
 Entry point
 ```
 
-_ **Client (Browser)**: The user interacts with the index.html file. The script.js file handles capturing the input and making a fetch request to the backend.
+- **Client (Browser)**: The user interacts with the index.html file. The script.js file handles capturing the input and making a fetch request to the backend.
 
-_ **Server (Node.js/Express)**: The server.js file runs an Express server that listens for incoming requests on port 3000.
+- **Server (Node.js/Express)**: The server.js file runs an Express server that listens for incoming requests on port 3000.
 
-_ **Data Flow**:
+- **Data Flow**:
 User Input -> Frontend (script.js) -> HTTP POST Request -> Backend (server.js) -> Gemini API Request -> Gemini API Response -> Backend (server.js) -> HTTP Response -> Frontend (script.js) -> Display on Page
 
 
