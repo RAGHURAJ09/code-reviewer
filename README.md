@@ -2,7 +2,7 @@
 A simple yet powerful web application that provides instant, AI-powered code reviews. Paste your code into the web interface and receive constructive feedback on potential bugs, performance issues, and best practices from Google's Gemini Pro model.
 
 ## 📖 Table of Contents
-_ About The Project
+- About The Project
 
 _ Key Features
 
